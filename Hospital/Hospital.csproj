@@ -225,6 +225,9 @@
     <Content Include="Views\Home\Doctors.cshtml" />
     <Content Include="Views\Menu\AllMenus.cshtml" />
     <Content Include="Views\Home\Patients.cshtml" />
+    <Content Include="Views\Home\Appointments.cshtml" />
+    <Content Include="Views\Home\Schedule.cshtml" />
+    <Content Include="Views\Home\Departments.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

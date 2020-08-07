@@ -40,5 +40,23 @@ namespace Hospital.Controllers
 
             return View();
         }
+        public ActionResult Appointments()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult Schedule()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult Departments()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
