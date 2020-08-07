@@ -34,5 +34,11 @@ namespace Hospital.Controllers
             return View();
         }
 
+        public ActionResult Patients()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }

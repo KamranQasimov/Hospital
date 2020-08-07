@@ -122,7 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\DoctorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Data\Menu.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -223,6 +223,8 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Home\Doctors.cshtml" />
+    <Content Include="Views\Menu\AllMenus.cshtml" />
+    <Content Include="Views\Home\Patients.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
