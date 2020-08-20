@@ -1,4 +1,4 @@
-﻿
+﻿@using Hospital.Extensions
 <div class="header">
     <div class="header-left">
         <a href="index-2.html" class="logo">
@@ -117,22 +117,22 @@
         <div id="sidebar-menu" class="sidebar-menu">
             <ul>
                 <li class="menu-title">Main</li>
-                <li class="active">
+                <li class="@Html.IsSelected(actions: "Index", controllers: "Home")">
                     <a href="@Url.Action("Index","Home")"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
                 </li>
-                <li>
+                <li class="@Html.IsSelected(actions: "Doctors", controllers: "Home")">
                     <a href="@Url.Action("Doctors","Home")"><i class="fa fa-user-md"></i> <span>Doctors</span></a>
                 </li>
-                <li>
+                <li class="@Html.IsSelected(actions: "Patients", controllers: "Home")">
                     <a href="@Url.Action("Patients","Home")"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
                 </li>
-                <li>
+                <li class="@Html.IsSelected(actions: "Appointments", controllers: "Home")">
                     <a href="@Url.Action("Appointments","Home")"><i class="fa fa-calendar"></i> <span>Appointments</span></a>
                 </li>
-                <li>
+                <li class="@Html.IsSelected(actions: "Schedule", controllers: "Home")">
                     <a href="@Url.Action("Schedule","Home")"><i class="fa fa-calendar-check-o"></i> <span>Doctor Schedule</span></a>
                 </li>
-                <li>
+                <li class="@Html.IsSelected(actions: "Departments", controllers: "Home")">
                     <a href="@Url.Action("Departments","Home")"><i class="fa fa-hospital-o"></i> <span>Departments</span></a>
                 </li>
                 <li class="submenu">
