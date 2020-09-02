@@ -11,9 +11,9 @@ namespace Hospital.Data
         [ForeignKey("Patient")]
         public int Id { get; set; }
         public int PatientId { get; set; }
-        public Patient Patient { get; set; }
+        public virtual Patient Patient { get; set; }
         public int DoctorId { get; set; }
-        public Doctor Doctor { get; set; }
+        public virtual Doctor Doctor { get; set; }
         public DateTime Date { get; set; }
         public bool IsActive { get; set; }
         public string Message { get; set; }

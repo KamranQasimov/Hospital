@@ -14,7 +14,7 @@ namespace Hospital.Data
             Patients = new HashSet<Patient>();
         }
         public int Id { get; set; }
-        public Employee Employee { get; set; }
+        public virtual Employee Employee { get; set; }
         public int EmployeeId { get; set; }
         public ICollection<Doctor> Doctors { get; set; }
         public ICollection<Reception> Receptions { get; set; }
